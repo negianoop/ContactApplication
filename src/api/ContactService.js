@@ -2,7 +2,7 @@ import axios from "axios";
 
 let API_ADDRESS = prompt("please give the ip address of backend server");
 
-const API_URL = 'http://' + API_ADDRESS +':8080/contacts';
+const API_URL = 'http://' + 'localhost' +':8080/contacts';
 
 export async function saveContact(contact) {
     return await axios.post(API_URL, contact);
